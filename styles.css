@@ -1,0 +1,123 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive; 
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+}
+
+p, ul, li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li:before {
+  content: "• ";
+  color: #4facfe;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+details p, details ul {
+  margin-left: 10px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  margin: 2rem 0; 
+  font-size: 1.2rem;
+}
+
+.score {
+  font-size: 1.8rem;
+  color: #4facfe;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin: 2rem 0; /* Add distance above and below the button section */
+}
+
+.btn {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 25px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+#reset-game-btn {
+  margin-top: 1.5rem;
+  display: none;
+  font-size: 1.1rem;
+}
+
+.results-container {
+  margin-top: 30px; /* Add spacing between results and other elements */
+}
+
+#results-msg {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#winner-msg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4facfe;
+  margin-top: 15px;
+}
